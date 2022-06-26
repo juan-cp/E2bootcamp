@@ -1,0 +1,43 @@
+html,body {
+    font-family:Poppins,sans-serif;
+    font-size:15px;
+    line-height:1.5;
+    margin:0
+}
+div {
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+    color:inherit;
+}
+
+h1 {
+    font-size: 40px;
+}
+.estilo-header{
+    left:0;
+    top:0;
+    right:0;
+    padding:0; 
+    background-color:#00f3aa;
+}
+.encabezado{
+    display:flex;
+    left:0;
+    top:0;
+    right:0;
+    padding:0; 
+    background-color:#00f3aa;
+    align-items: left;
+ 
+}
+.jumbotron{
+    text-align:left;
+    opacity: 1;
+ 
+
+}
