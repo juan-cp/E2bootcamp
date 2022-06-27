@@ -18,6 +18,34 @@ a:hover, a:visited, a:link, a:active {
 h1 {
     font-size: 40px;
 }
+.seccion_formulario{
+    flex-direction: column; 
+}
+.formulario{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "f_nombre"
+    "f_apellido"
+    "f_email"
+    "f_boton";
+    background-color: white!important;
+    margin:20; 
+    box-shadow:rgba(0, 0, 0, 0.3) 0px 0px 8px;
+    border-radius: 10px 10px 10px 10px;
+    align-items:center;
+}
+.f_nombre{
+    grid-area:f_nombre;
+}
+.f_apellido{
+    grid-area:f_apellido;
+}
+.f_email{
+    grid-area:f_email;
+}
+.f-boton{
+    grid-area:f_boton;
+}
 .estilo-header{
     left:0;
     top:0;
@@ -41,3 +69,12 @@ h1 {
  
 
 }
+.update_icon{
+    color: green;
+    padding: 10px 10px 10px 0;
+  }
+  .remove_item{
+    color: red;
+    padding: 10px 5px 10px 10px;
+    
+  }

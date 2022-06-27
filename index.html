@@ -3,7 +3,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registro de usuarios</title>
+  <title>egistro de Pacientes Hospital San Juan</title>
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles.css">
@@ -19,15 +19,49 @@
               </svg>
           </div>
           <div>
-            Registro de Usuarios
+            Registro de Pacientes Hospital San Juan
           </div>
         </div>
     </header>
-    <div class="jumbotron">
+
+    <div>
         <div>
-          <h2 style="color:black">Sistema CRUD</h2>
+          <h2 style="color:black">Ingreso de datos del paciente:</h2>
         </div>
     </div> 
-
+    <div id="container">
+        <div class="seccion_formulario">
+            <div class="formulario">
+              <div class="f_nombre">
+                <label for="nombre">Nombre</label><br>
+                <input id="nombre" type="nombre" class="cuadrotexto ancho-4 alto-margen-1" >
+              </div>
+              <div class="f_apellido">
+                <label for="apellido">Apellido</label><br>
+                <input id="apellido" type="apellido" class="cuadrotexto ancho-4 alto-margen-1" >
+              </div>
+              <div class="f_email">
+                <label for="email">E-mail</label><br>
+                <input id="email" type="email" class="cuadrotexto ancho-4 alto-margen-1" >
+              </div>
+              <div class="f_telefono">
+                <label for="telefono">Teléfono</label><br>
+                <input id="telefono" type="email" class="cuadrotexto ancho-4 alto-margen-1" >
+              </div>
+              <div class="f_boton">
+                <button type="submit" id="btnSave">Guardar</button>
+              </div>
+            </div>
+              
+          </div>
+    </div>
+    <hr/>
+    <div id="container">
+        <div>
+          <h2 style="color:black">Listado de Ingresos:</h2>
+        </div>
+        <ul id="listado"></ul>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
