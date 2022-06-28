@@ -27,6 +27,7 @@ function guarda_paciente(event) {
     };
     listado_ingresos.push(paciente);
     sincronizar();
+    mostrar_pacientes(paciente);
     ultimo_id++;
   }
 
@@ -41,5 +42,31 @@ function guarda_paciente(event) {
     ultimo_id = ultimo_paciente.pacienteId + 1;
     return ultimo_id;
   }
+  function mostrar_pacientes(pac) {
+  
+    var removeIcon = document.createElement('td');
+    var element = document.createElement('tr');
+    var updateIcon = document.createElement('td');
+
+  
+    removeIcon.innerHTML = "&#10060;";
+    removeIcon.className = "remove_item clickeable";
+    removeIcon.setAttribute("title", "Remove");
+
+    updateIcon.innerHTML = "&#9997;";
+    updateIcon.className = "update_icon clickeable";
+    updateIcon.setAttribute("title", "Update");
+
+
+    
+    element.setAttribute("id", pac.pacienteId);
+    element.innerHTML += "<td>"+pac.nombre+"</td>";
+    element.innerHTML += "<td>"+pac.apellido+"</td>";
+    element.innerHTML += "<td>"+pac.email_add+"</td>";
+    element.innerHTML += "<td>"+pac.telefono+"</td>";
+    element.appendChild(removeIcon);
+    element.appendChild(updateIcon);
+    listado.appendChild(element);
+}
 
 inicializar();
